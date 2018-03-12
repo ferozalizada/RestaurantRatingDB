@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <meta name="description" content="A basic restaurant rating app">
+        <meta name="viewport" content=" width= device-width initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Restaurant Rater</title>
+        <!-- Loads the CSS-->
+        <!-- Loads bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link type="text" rel="stylesheet" href="index.css">
+
+
+    </HEAD>
+    <BODY>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="/src/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Restaurant Rater
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" 
+                    routerLink="/scheduler">
+                    <!--[routerLink]="['/scheduler', { outlets: {'timetable-gui': ['calendar'],'course-list-gui': ['course-list']}}]"-->
+                    Popular
+                    <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/favourites">
+                    Favourites
+                    </a>
+                </li>
+                
+                </ul>
+                <form class="input-group form-inline my-2 my-lg-0 col-md-4">
+                <input class="form-control" type="search" placeholder="Search for Restaurants.." aria-label="Search">
+                <span class="input-group-btn">
+                    <button class="btn btn-outline-success glyphicon" type="submit">
+                        <img src="/src/images/search.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </button>
+                </span>
+                <button class="btn btn-warning bg-faded round" type="submit">
+                        Log Out
+                </button>
+                </form>
+            </div>
+            </nav>
+
+            <!-- main body od the html-->
+
+            <div class="jumbotron">
+                <div class="container">
+                    
+                </div>
+            </div>
+
+        <!-- Loads Jquery for bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous"></script>
+        <script src="./js/index.js">
+        </script>
+    <BODY>
+</HTML>
